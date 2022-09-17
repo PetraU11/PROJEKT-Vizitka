@@ -1,7 +1,38 @@
-/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
+body {background-color: #b2bec3;}
+
+.photo {border-style: 3px solid white;
+width: 150px;
+height: 150px;}
+
+.box { margin-top:150px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 550px;
+    font-family: 'Nunito', sans-serif;
+    background-color:white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    color: #d63031;
+}
+
+p {
+    font-size:18px;
+}
+
+.paragraphs {margin-top:30px;
+margin-bottom:30px;}
+
+
+/* regular 400 font-family: 'Nunito', sans-serif;
+ */
 /*
 BARVY:
 šedá na pozadí stránky:		 #b2bec3
