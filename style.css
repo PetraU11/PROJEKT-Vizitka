@@ -1,13 +1,21 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
-body {background-color: #b2bec3;}
+body {background-color: #b2bec3;
+}
 
-.photo {border-style: 3px solid white;
+.photo {border-style: solid;
+border-color: white;
+border-width: 3px;
 width: 150px;
-height: 150px;}
+height: 150px;
+border-radius:50%;
+box-shadow: 5px 5px 5px rgb(143, 142, 142);
+}
 
-.box { margin-top:150px;
+.box { 
+    position: relative;
+    margin-top:150px;
     margin-left:auto;
     margin-right:auto;
     width: 550px;
@@ -15,6 +23,48 @@ height: 150px;}
     background-color:white;
     padding: 30px;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(143, 142, 142);
+
+}
+
+.box img { position: absolute;
+    left: 470px;
+    bottom: 400px;
+}
+
+.twitter {background-color: #1da1f2;
+    border: none;
+    color:white;
+    text-decoration: none;
+    display:block;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-transform: uppercase; 
+}
+.twitter:hover {background-color: #0b7bc1;
+
+}
+.facebook {
+    margin-top: 5px; 
+    background-color: #3b5998;
+    border: none;
+    color:white;
+    text-decoration: none;
+    display:block;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-transform:uppercase;
+}
+
+.facebook:hover {background-color: #2b406e;
 }
 
 h1{
@@ -23,25 +73,11 @@ h1{
     color: #d63031;
 }
 
-p {
+.para {
+    text-align:justify;
     font-size:18px;
 }
 
 .paragraphs {margin-top:30px;
-margin-bottom:30px;}
-
-
-/* regular 400 font-family: 'Nunito', sans-serif;
- */
-/*
-BARVY:
-šedá na pozadí stránky:		 #b2bec3
-červená na hlavní nadpis:  #d63031
-
-tlačítko Twitter:					 #1da1f2
-tlačítko Twitter aktivní:	 #0b7bc1
-
-tlačítko Facebook:				 #3b5998
-tlačítko Facebook aktivní: #2b406e
-*/
-
+margin-bottom:30px;
+}
