@@ -1,83 +1,79 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
-body {background-color: #b2bec3;
-}
-
-.photo {border-style: solid;
-border-color: white;
-border-width: 3px;
-width: 150px;
-height: 150px;
-border-radius:50%;
-box-shadow: 5px 5px 5px rgb(143, 142, 142);
-}
+body {
+    background-color: #b2bec3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+} 
 
 .box { 
-    position: relative;
-    margin-top:150px;
-    margin-left:auto;
-    margin-right:auto;
-    width: 550px;
     font-family: 'Nunito', sans-serif;
-    background-color:white;
+    width: 550px;
     padding: 30px;
+    background-color:white;
     border-radius: 10px;
+    position: relative;
     box-shadow: 5px 5px 5px rgb(143, 142, 142);
-
 }
 
-.box img { position: absolute;
-    left: 470px;
-    bottom: 400px;
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    border: 3px solid white;
+    position: absolute;
+    right: -75px;
+    top: -75px;
+    box-shadow: 5px 5px 5px rgb(143, 142, 142);
 }
 
-.twitter {background-color: #1da1f2;
-    border: none;
-    color:white;
-    text-decoration: none;
-    display:block;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    padding-top:10px;
-    padding-bottom:10px;
-    text-transform: uppercase; 
-}
-.twitter:hover {background-color: #0b7bc1;
-
-}
-.facebook {
-    margin-top: 5px; 
-    background-color: #3b5998;
-    border: none;
-    color:white;
-    text-decoration: none;
-    display:block;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    padding-top:10px;
-    padding-bottom:10px;
-    text-transform:uppercase;
-}
-
-.facebook:hover {background-color: #2b406e;
-}
-
-h1{
+.name {
+    margin-top: 0;
+    margin-bottom:30px;
     font-size: 36px;
     font-weight: bold;
     color: #d63031;
 }
 
-.para {
-    text-align:justify;
-    font-size:18px;
+.buttons {
+    margin-top: 30px; 
 }
 
-.paragraphs {margin-top:30px;
-margin-bottom:30px;
+.button {
+    display:block;
+    padding: 10px; 
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase; 
+    border: none;
+    color:white;
+    font-size: 18px;
+    font-weight: bold; 
 }
+
+.button + .button {
+    margin-top: 5px;
+}
+
+.twitter {
+    background-color: #1da1f2;
+      
+}
+
+.twitter:hover {
+    background-color: #0b7bc1;
+}
+
+.facebook {
+    background-color: #3b5998;   
+}
+
+.facebook:hover {
+    background-color: #2b406e;
+}
+
